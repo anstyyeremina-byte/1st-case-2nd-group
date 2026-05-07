@@ -21,7 +21,7 @@
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:'Inter',sans-serif;background:var(--gray-50);color:var(--gray-800);min-height:100vh}
+body{font-family:'Inter',sans-serif;background:var(--gray-50);color:var(--gray-800);min-height:100vh;display:flex;flex-direction:column}
 
 /* ══ HEADER ══ */
 header{
@@ -54,7 +54,7 @@ header{
 .nav-tab-top.active{background:var(--green);color:var(--white)}
 
 /* ══ PAGES ══ */
-.page{display:none}.page.active{display:block}
+.page{display:none}.page.active{display:flex;flex-direction:column;flex:1}
 
 /* ══ HERO ══ */
 .hero{
