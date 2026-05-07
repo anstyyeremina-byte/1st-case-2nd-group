@@ -1032,6 +1032,13 @@ footer span{color:var(--green-mid)}
 
 <!-- ══════════════ STORY MAP ══════════════ -->
 <div class="page" id="page-storymap">
+  <div class="hero" style="padding:38px 40px 34px;background:linear-gradient(135deg,#1A4A3C,#2E8B6A)">
+    <span class="hero-tag">Story Map · User Journey · FigJam</span>
+    <h1 style="font-size:clamp(22px,3.5vw,38px)">User Story Map</h1>
+    <p style="margin-bottom:24px;font-size:14px">Full User Story Map for BNPL and Bulk Payments — activities, user tasks and releases in FigJam.</p>
+    <a href="YOUR_STORYMAP_URL_HERE" target="_blank" class="btn btn-white">Open in FigJam ↗</a>
+  </div>
+
   <div class="nav-section">
     <button class="nav-tab active" id="sm-tab-bnpl-ind"   onclick="selectSm('bnpl-ind')">💳 BNPL Individual</button>
     <button class="nav-tab"        id="sm-tab-bnpl-legal" onclick="selectSm('bnpl-legal')">🏢 BNPL Legal Entity</button>
@@ -1039,169 +1046,170 @@ footer span{color:var(--green-mid)}
   </div>
 
   <!-- BNPL INDIVIDUAL -->
-  <div id="sm-bnpl-ind" class="main" style="padding-top:28px">
-    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:22px">
-      <div>
-        <div class="section-label" style="margin-bottom:4px">BNPL Individual · Story Map</div>
-        <div style="font-size:13px;color:var(--gray-600)">5 user tasks · 14 user stories · all Must</div>
-      </div>
-      <a href="https://www.figma.com/board/wMqLfrZ0S9HxBXH5xXHqsb/story_mapping?node-id=0-1&t=kio9uUL7ziTizeCN-1" target="_blank" class="figjam-link">Open in FigJam →</a>
+  <div id="sm-bnpl-ind" style="padding:28px 40px 60px;max-width:1400px;margin:0 auto">
+    <div style="margin-bottom:20px">
+      <div class="section-label" style="margin-bottom:4px">BNPL Individual · Story Map</div>
+      <div style="font-size:13px;color:var(--gray-600)">5 user tasks · 14 user stories · all Must</div>
     </div>
-    <div style="margin-bottom:24px">
-    </div>
-    <div style="background:var(--white);border-radius:var(--radius);border:1.5px solid var(--gray-200);box-shadow:var(--shadow);overflow:hidden">
-      <div style="display:grid;grid-template-columns:120px repeat(5,1fr);border-bottom:2px solid var(--gray-200)">
-        <div style="background:var(--gray-100);padding:14px 16px;display:flex;align-items:center;border-right:2px solid var(--gray-200)"><span style="font-size:12px;font-weight:800;color:#C8547A;text-transform:uppercase;letter-spacing:.8px">User Tasks</span></div>
-        <div class="sm-task-cell">1. Select BNPL at checkout</div>
-        <div class="sm-task-cell">2. Pass credit scoring</div>
-        <div class="sm-task-cell">3. Sign BNPL agreement</div>
-        <div class="sm-task-cell">4. Make payments</div>
-        <div class="sm-task-cell" style="border-right:none">5. Monitor agreement</div>
-      </div>
-      <div style="display:grid;grid-template-columns:120px repeat(5,1fr);border-bottom:1.5px solid var(--gray-200);background:var(--gray-50)">
-        <div style="padding:10px 16px;display:flex;align-items:center;border-right:2px solid var(--gray-200)"><span style="font-size:12px;font-weight:800;color:var(--yellow-dark);text-transform:uppercase;letter-spacing:.8px">User Stories</span></div>
-        <div class="sm-col-header">Task 1</div>
-        <div class="sm-col-header">Task 2</div>
-        <div class="sm-col-header">Task 3</div>
-        <div class="sm-col-header">Task 4</div>
-        <div class="sm-col-header" style="border-right:none">Task 5</div>
-      </div>
-      <div style="display:grid;grid-template-columns:120px repeat(5,1fr);border-bottom:1px solid var(--gray-100)">
-        <div class="sm-row-label">Row 1</div>
-        <div class="sm-story-cell"><div class="sm-must">Must</div>1.1 See BNPL alongside other payment methods</div>
-        <div class="sm-story-cell"><div class="sm-must">Must</div>2.1 Grant access to account data (AISP)</div>
-        <div class="sm-story-cell"><div class="sm-must">Must</div>3.1 Confirm agreement via SCA (BankID / biometrics)</div>
-        <div class="sm-story-cell"><div class="sm-must">Must</div>4.1 Automatically debit instalments on schedule</div>
-        <div class="sm-story-cell" style="border-right:none"><div class="sm-must">Must</div>5.1 View agreement status: pending / active / overdue / completed</div>
-      </div>
-      <div style="display:grid;grid-template-columns:120px repeat(5,1fr);border-bottom:1px solid var(--gray-100)">
-        <div class="sm-row-label">Row 2</div>
-        <div class="sm-story-cell"><div class="sm-must">Must</div>1.2 Choose plan: Pay in 3 / Pay in 4 / monthly</div>
-        <div class="sm-story-cell"><div class="sm-must">Must</div>2.2 Receive credit decision in 2 minutes</div>
-        <div class="sm-story-cell"><div class="sm-must">Must</div>3.2 Consent to automatic debits on schedule</div>
-        <div class="sm-story-cell"><div class="sm-must">Must</div>4.2 Receive push/SMS 5 days before payment</div>
-        <div class="sm-story-cell" style="border-right:none"><div class="sm-must">Must</div>5.2 See active debt before new BNPL request</div>
-      </div>
-      <div style="display:grid;grid-template-columns:120px repeat(5,1fr)">
-        <div class="sm-row-label">Row 3</div>
-        <div class="sm-story-cell"><div class="sm-must">Must</div>1.3 See full terms before confirmation (amount, dates, fees)</div>
-        <div class="sm-story-cell"><div class="sm-must">Must</div>2.3 Understand reason for decline (alternative path)</div>
-        <div class="sm-story-cell"><div class="sm-must">Must</div>3.3 See summary screen (total, schedule, no hidden fees)</div>
-        <div class="sm-story-cell"><div class="sm-must">Must</div>4.3 Pay early without penalty, with recalculation</div>
-        <div class="sm-story-cell" style="border-right:none"><div class="sm-must">Must</div>5.3 Revoke AISP access to account<br/><br/>5.4 View repayment calendar on Privat24 home screen</div>
-      </div>
+    <div style="overflow-x:auto">
+      <table style="width:100%;border-collapse:collapse;min-width:750px;background:var(--white);border-radius:var(--radius);box-shadow:var(--shadow)">
+        <thead>
+          <tr>
+            <th style="background:var(--gray-100);padding:12px 14px;text-align:left;font-size:11px;font-weight:800;color:#C8547A;text-transform:uppercase;border:1px solid var(--gray-200);width:80px">Tasks</th>
+            <th style="background:var(--pink);padding:12px 14px;text-align:left;font-size:12px;font-weight:700;color:#8B1A3A;border:1px solid rgba(200,84,122,.25)">1. Select BNPL at checkout</th>
+            <th style="background:var(--pink);padding:12px 14px;text-align:left;font-size:12px;font-weight:700;color:#8B1A3A;border:1px solid rgba(200,84,122,.25)">2. Pass credit scoring</th>
+            <th style="background:var(--pink);padding:12px 14px;text-align:left;font-size:12px;font-weight:700;color:#8B1A3A;border:1px solid rgba(200,84,122,.25)">3. Sign BNPL agreement</th>
+            <th style="background:var(--pink);padding:12px 14px;text-align:left;font-size:12px;font-weight:700;color:#8B1A3A;border:1px solid rgba(200,84,122,.25)">4. Make payments</th>
+            <th style="background:var(--pink);padding:12px 14px;text-align:left;font-size:12px;font-weight:700;color:#8B1A3A;border:1px solid rgba(200,84,122,.25)">5. Monitor agreement</th>
+          </tr>
+          <tr>
+            <th style="background:var(--gray-50);padding:8px 14px;font-size:11px;font-weight:700;color:var(--yellow-dark);text-transform:uppercase;border:1px solid var(--gray-200)">Stories</th>
+            <th style="background:var(--gray-50);padding:8px 14px;font-size:11px;color:var(--gray-400);border:1px solid var(--gray-200)">Task 1</th>
+            <th style="background:var(--gray-50);padding:8px 14px;font-size:11px;color:var(--gray-400);border:1px solid var(--gray-200)">Task 2</th>
+            <th style="background:var(--gray-50);padding:8px 14px;font-size:11px;color:var(--gray-400);border:1px solid var(--gray-200)">Task 3</th>
+            <th style="background:var(--gray-50);padding:8px 14px;font-size:11px;color:var(--gray-400);border:1px solid var(--gray-200)">Task 4</th>
+            <th style="background:var(--gray-50);padding:8px 14px;font-size:11px;color:var(--gray-400);border:1px solid var(--gray-200)">Task 5</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="background:var(--gray-50);padding:10px 14px;font-size:11px;font-weight:600;color:var(--gray-400);border:1px solid var(--gray-200);vertical-align:top">Row 1</td>
+            <td style="background:var(--yellow);padding:10px 14px;font-size:12px;line-height:1.5;border:1px solid rgba(184,138,0,.2);vertical-align:top"><b style="display:inline-block;background:#E53935;color:#fff;font-size:10px;padding:2px 8px;border-radius:20px;margin-bottom:5px;font-weight:700">Must</b><br/>1.1 See BNPL alongside other payment methods</td>
+            <td style="background:var(--yellow);padding:10px 14px;font-size:12px;line-height:1.5;border:1px solid rgba(184,138,0,.2);vertical-align:top"><b style="display:inline-block;background:#E53935;color:#fff;font-size:10px;padding:2px 8px;border-radius:20px;margin-bottom:5px;font-weight:700">Must</b><br/>2.1 Grant access to account data (AISP)</td>
+            <td style="background:var(--yellow);padding:10px 14px;font-size:12px;line-height:1.5;border:1px solid rgba(184,138,0,.2);vertical-align:top"><b style="display:inline-block;background:#E53935;color:#fff;font-size:10px;padding:2px 8px;border-radius:20px;margin-bottom:5px;font-weight:700">Must</b><br/>3.1 Confirm agreement via SCA (BankID / biometrics)</td>
+            <td style="background:var(--yellow);padding:10px 14px;font-size:12px;line-height:1.5;border:1px solid rgba(184,138,0,.2);vertical-align:top"><b style="display:inline-block;background:#E53935;color:#fff;font-size:10px;padding:2px 8px;border-radius:20px;margin-bottom:5px;font-weight:700">Must</b><br/>4.1 Automatically debit instalments on schedule</td>
+            <td style="background:var(--yellow);padding:10px 14px;font-size:12px;line-height:1.5;border:1px solid rgba(184,138,0,.2);vertical-align:top"><b style="display:inline-block;background:#E53935;color:#fff;font-size:10px;padding:2px 8px;border-radius:20px;margin-bottom:5px;font-weight:700">Must</b><br/>5.1 View status: pending / active / overdue / completed</td>
+          </tr>
+          <tr>
+            <td style="background:var(--gray-50);padding:10px 14px;font-size:11px;font-weight:600;color:var(--gray-400);border:1px solid var(--gray-200);vertical-align:top">Row 2</td>
+            <td style="background:var(--yellow);padding:10px 14px;font-size:12px;line-height:1.5;border:1px solid rgba(184,138,0,.2);vertical-align:top"><b style="display:inline-block;background:#E53935;color:#fff;font-size:10px;padding:2px 8px;border-radius:20px;margin-bottom:5px;font-weight:700">Must</b><br/>1.2 Choose plan: Pay in 3 / Pay in 4 / monthly</td>
+            <td style="background:var(--yellow);padding:10px 14px;font-size:12px;line-height:1.5;border:1px solid rgba(184,138,0,.2);vertical-align:top"><b style="display:inline-block;background:#E53935;color:#fff;font-size:10px;padding:2px 8px;border-radius:20px;margin-bottom:5px;font-weight:700">Must</b><br/>2.2 Receive credit decision in 2 minutes</td>
+            <td style="background:var(--yellow);padding:10px 14px;font-size:12px;line-height:1.5;border:1px solid rgba(184,138,0,.2);vertical-align:top"><b style="display:inline-block;background:#E53935;color:#fff;font-size:10px;padding:2px 8px;border-radius:20px;margin-bottom:5px;font-weight:700">Must</b><br/>3.2 Consent to automatic debits on schedule</td>
+            <td style="background:var(--yellow);padding:10px 14px;font-size:12px;line-height:1.5;border:1px solid rgba(184,138,0,.2);vertical-align:top"><b style="display:inline-block;background:#E53935;color:#fff;font-size:10px;padding:2px 8px;border-radius:20px;margin-bottom:5px;font-weight:700">Must</b><br/>4.2 Receive push/SMS 5 days before payment</td>
+            <td style="background:var(--yellow);padding:10px 14px;font-size:12px;line-height:1.5;border:1px solid rgba(184,138,0,.2);vertical-align:top"><b style="display:inline-block;background:#E53935;color:#fff;font-size:10px;padding:2px 8px;border-radius:20px;margin-bottom:5px;font-weight:700">Must</b><br/>5.2 See active debt before new BNPL request</td>
+          </tr>
+          <tr>
+            <td style="background:var(--gray-50);padding:10px 14px;font-size:11px;font-weight:600;color:var(--gray-400);border:1px solid var(--gray-200);vertical-align:top">Row 3</td>
+            <td style="background:var(--yellow);padding:10px 14px;font-size:12px;line-height:1.5;border:1px solid rgba(184,138,0,.2);vertical-align:top"><b style="display:inline-block;background:#E53935;color:#fff;font-size:10px;padding:2px 8px;border-radius:20px;margin-bottom:5px;font-weight:700">Must</b><br/>1.3 See full terms: amount, dates, fees</td>
+            <td style="background:var(--yellow);padding:10px 14px;font-size:12px;line-height:1.5;border:1px solid rgba(184,138,0,.2);vertical-align:top"><b style="display:inline-block;background:#E53935;color:#fff;font-size:10px;padding:2px 8px;border-radius:20px;margin-bottom:5px;font-weight:700">Must</b><br/>2.3 Understand reason for decline (alternative path)</td>
+            <td style="background:var(--yellow);padding:10px 14px;font-size:12px;line-height:1.5;border:1px solid rgba(184,138,0,.2);vertical-align:top"><b style="display:inline-block;background:#E53935;color:#fff;font-size:10px;padding:2px 8px;border-radius:20px;margin-bottom:5px;font-weight:700">Must</b><br/>3.3 Summary screen: total, schedule, no hidden fees</td>
+            <td style="background:var(--yellow);padding:10px 14px;font-size:12px;line-height:1.5;border:1px solid rgba(184,138,0,.2);vertical-align:top"><b style="display:inline-block;background:#E53935;color:#fff;font-size:10px;padding:2px 8px;border-radius:20px;margin-bottom:5px;font-weight:700">Must</b><br/>4.3 Pay early without penalty, with recalculation</td>
+            <td style="background:var(--yellow);padding:10px 14px;font-size:12px;line-height:1.5;border:1px solid rgba(184,138,0,.2);vertical-align:top"><b style="display:inline-block;background:#E53935;color:#fff;font-size:10px;padding:2px 8px;border-radius:20px;margin-bottom:5px;font-weight:700">Must</b><br/>5.3 Revoke AISP access to account<br/><br/><b style="display:inline-block;background:#E53935;color:#fff;font-size:10px;padding:2px 8px;border-radius:20px;margin-bottom:5px;font-weight:700">Must</b><br/>5.4 View repayment calendar on Privat24 home screen</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 
   <!-- BNPL LEGAL ENTITY -->
-  <div id="sm-bnpl-legal" class="main" style="display:none;padding-top:28px">
-    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:22px">
-      <div>
-        <div class="section-label" style="margin-bottom:4px">BNPL Legal Entity · Story Map</div>
-        <div style="font-size:13px;color:var(--gray-600)">5 user tasks · 14 user stories · all Must</div>
-      </div>
-      <a href="https://www.figma.com/board/wMqLfrZ0S9HxBXH5xXHqsb/story_mapping?node-id=0-1&t=kio9uUL7ziTizeCN-1" target="_blank" class="figjam-link">Open in FigJam →</a>
+  <div id="sm-bnpl-legal" style="display:none;padding:28px 40px 60px;max-width:1400px;margin:0 auto">
+    <div style="margin-bottom:20px">
+      <div class="section-label" style="margin-bottom:4px">BNPL Legal Entity · Story Map</div>
+      <div style="font-size:13px;color:var(--gray-600)">5 user tasks · 14 user stories · all Must</div>
     </div>
-    <div style="margin-bottom:24px">
-    </div>
-    <div style="background:var(--white);border-radius:var(--radius);border:1.5px solid var(--gray-200);box-shadow:var(--shadow);overflow:hidden">
-      <div style="display:grid;grid-template-columns:120px repeat(5,1fr);border-bottom:2px solid var(--gray-200)">
-        <div style="background:var(--gray-100);padding:14px 16px;display:flex;align-items:center;border-right:2px solid var(--gray-200)"><span style="font-size:12px;font-weight:800;color:#C8547A;text-transform:uppercase;letter-spacing:.8px">User Tasks</span></div>
-        <div class="sm-task-cell">1. Verify limit eligibility</div>
-        <div class="sm-task-cell">2. Pass financial analysis</div>
-        <div class="sm-task-cell">3. Activate BNPL limit</div>
-        <div class="sm-task-cell">4. Use limit for procurement</div>
-        <div class="sm-task-cell" style="border-right:none">5. Control limit &amp; repayments</div>
-      </div>
-      <div style="display:grid;grid-template-columns:120px repeat(5,1fr);border-bottom:1.5px solid var(--gray-200);background:var(--gray-50)">
-        <div style="padding:10px 16px;display:flex;align-items:center;border-right:2px solid var(--gray-200)"><span style="font-size:12px;font-weight:800;color:var(--yellow-dark);text-transform:uppercase;letter-spacing:.8px">User Stories</span></div>
-        <div class="sm-col-header">Task 1</div>
-        <div class="sm-col-header">Task 2</div>
-        <div class="sm-col-header">Task 3</div>
-        <div class="sm-col-header">Task 4</div>
-        <div class="sm-col-header" style="border-right:none">Task 5</div>
-      </div>
-      <div style="display:grid;grid-template-columns:120px repeat(5,1fr);border-bottom:1px solid var(--gray-100)">
-        <div class="sm-row-label">Row 1</div>
-        <div class="sm-story-cell"><div class="sm-must">Must</div>1.1 View pre-approved BNPL limit in Privat24 Business</div>
-        <div class="sm-story-cell"><div class="sm-must">Must</div>2.1 System uses 12-month account turnover as collateral substitute</div>
-        <div class="sm-story-cell"><div class="sm-must">Must</div>3.1 See full cost before activation (nothing changes after)</div>
-        <div class="sm-story-cell"><div class="sm-must">Must</div>4.1 Use BNPL limit to pay supplier via invoice</div>
-        <div class="sm-story-cell" style="border-right:none"><div class="sm-must">Must</div>5.1 View active limit and balance via API (for ERP)</div>
-      </div>
-      <div style="display:grid;grid-template-columns:120px repeat(5,1fr);border-bottom:1px solid var(--gray-100)">
-        <div class="sm-row-label">Row 2</div>
-        <div class="sm-story-cell"><div class="sm-must">Must</div>1.2 See qualification criteria and activation conditions</div>
-        <div class="sm-story-cell"><div class="sm-must">Must</div>2.2 Limit calculated from monthly turnover (up to UAH 5M)</div>
-        <div class="sm-story-cell"><div class="sm-must">Must</div>3.2 Sign agreement by authorised persons (accountant + director)</div>
-        <div class="sm-story-cell"><div class="sm-must">Must</div>4.2 Funds reach supplier instantly; repayment tied to invoice date</div>
-        <div class="sm-story-cell" style="border-right:none"><div class="sm-must">Must</div>5.2 Limit grows automatically after each repayment cycle</div>
-      </div>
-      <div style="display:grid;grid-template-columns:120px repeat(5,1fr)">
-        <div class="sm-row-label">Row 3</div>
-        <div class="sm-story-cell"><div class="sm-must">Must</div>1.3 Grant explicit Open Banking consent (AISP)</div>
-        <div class="sm-story-cell"><div class="sm-must">Must</div>2.3 Receive credit decision within hours</div>
-        <div class="sm-story-cell"><div class="sm-must">Must</div>3.3 Fixed UAH rate after confirmation — no FX risk</div>
-        <div class="sm-story-cell"><div class="sm-must">Must</div>4.3 Choose instalment model (partial payments at end)</div>
-        <div class="sm-story-cell" style="border-right:none"><div class="sm-must">Must</div>5.3 Active debt blocks new BNPL request (safeguard)<br/><br/>5.4 Revoke only affects future — not current active agreements</div>
-      </div>
+    <div style="overflow-x:auto">
+      <table style="width:100%;border-collapse:collapse;min-width:750px;background:var(--white);border-radius:var(--radius);box-shadow:var(--shadow)">
+        <thead>
+          <tr>
+            <th style="background:var(--gray-100);padding:12px 14px;text-align:left;font-size:11px;font-weight:800;color:#C8547A;text-transform:uppercase;border:1px solid var(--gray-200);width:80px">Tasks</th>
+            <th style="background:var(--pink);padding:12px 14px;text-align:left;font-size:12px;font-weight:700;color:#8B1A3A;border:1px solid rgba(200,84,122,.25)">1. Verify limit eligibility</th>
+            <th style="background:var(--pink);padding:12px 14px;text-align:left;font-size:12px;font-weight:700;color:#8B1A3A;border:1px solid rgba(200,84,122,.25)">2. Pass financial analysis</th>
+            <th style="background:var(--pink);padding:12px 14px;text-align:left;font-size:12px;font-weight:700;color:#8B1A3A;border:1px solid rgba(200,84,122,.25)">3. Activate BNPL limit</th>
+            <th style="background:var(--pink);padding:12px 14px;text-align:left;font-size:12px;font-weight:700;color:#8B1A3A;border:1px solid rgba(200,84,122,.25)">4. Use limit for procurement</th>
+            <th style="background:var(--pink);padding:12px 14px;text-align:left;font-size:12px;font-weight:700;color:#8B1A3A;border:1px solid rgba(200,84,122,.25)">5. Control limit &amp; repayments</th>
+          </tr>
+          <tr>
+            <th style="background:var(--gray-50);padding:8px 14px;font-size:11px;font-weight:700;color:var(--yellow-dark);text-transform:uppercase;border:1px solid var(--gray-200)">Stories</th>
+            <th style="background:var(--gray-50);padding:8px 14px;font-size:11px;color:var(--gray-400);border:1px solid var(--gray-200)">Task 1</th>
+            <th style="background:var(--gray-50);padding:8px 14px;font-size:11px;color:var(--gray-400);border:1px solid var(--gray-200)">Task 2</th>
+            <th style="background:var(--gray-50);padding:8px 14px;font-size:11px;color:var(--gray-400);border:1px solid var(--gray-200)">Task 3</th>
+            <th style="background:var(--gray-50);padding:8px 14px;font-size:11px;color:var(--gray-400);border:1px solid var(--gray-200)">Task 4</th>
+            <th style="background:var(--gray-50);padding:8px 14px;font-size:11px;color:var(--gray-400);border:1px solid var(--gray-200)">Task 5</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="background:var(--gray-50);padding:10px 14px;font-size:11px;font-weight:600;color:var(--gray-400);border:1px solid var(--gray-200);vertical-align:top">Row 1</td>
+            <td style="background:var(--yellow);padding:10px 14px;font-size:12px;line-height:1.5;border:1px solid rgba(184,138,0,.2);vertical-align:top"><b style="display:inline-block;background:#E53935;color:#fff;font-size:10px;padding:2px 8px;border-radius:20px;margin-bottom:5px;font-weight:700">Must</b><br/>1.1 View pre-approved BNPL limit in Privat24 Business</td>
+            <td style="background:var(--yellow);padding:10px 14px;font-size:12px;line-height:1.5;border:1px solid rgba(184,138,0,.2);vertical-align:top"><b style="display:inline-block;background:#E53935;color:#fff;font-size:10px;padding:2px 8px;border-radius:20px;margin-bottom:5px;font-weight:700">Must</b><br/>2.1 12-month account turnover as collateral substitute</td>
+            <td style="background:var(--yellow);padding:10px 14px;font-size:12px;line-height:1.5;border:1px solid rgba(184,138,0,.2);vertical-align:top"><b style="display:inline-block;background:#E53935;color:#fff;font-size:10px;padding:2px 8px;border-radius:20px;margin-bottom:5px;font-weight:700">Must</b><br/>3.1 See full cost before activation (nothing changes after)</td>
+            <td style="background:var(--yellow);padding:10px 14px;font-size:12px;line-height:1.5;border:1px solid rgba(184,138,0,.2);vertical-align:top"><b style="display:inline-block;background:#E53935;color:#fff;font-size:10px;padding:2px 8px;border-radius:20px;margin-bottom:5px;font-weight:700">Must</b><br/>4.1 Use BNPL limit to pay supplier via invoice</td>
+            <td style="background:var(--yellow);padding:10px 14px;font-size:12px;line-height:1.5;border:1px solid rgba(184,138,0,.2);vertical-align:top"><b style="display:inline-block;background:#E53935;color:#fff;font-size:10px;padding:2px 8px;border-radius:20px;margin-bottom:5px;font-weight:700">Must</b><br/>5.1 View active limit and balance via API (for ERP)</td>
+          </tr>
+          <tr>
+            <td style="background:var(--gray-50);padding:10px 14px;font-size:11px;font-weight:600;color:var(--gray-400);border:1px solid var(--gray-200);vertical-align:top">Row 2</td>
+            <td style="background:var(--yellow);padding:10px 14px;font-size:12px;line-height:1.5;border:1px solid rgba(184,138,0,.2);vertical-align:top"><b style="display:inline-block;background:#E53935;color:#fff;font-size:10px;padding:2px 8px;border-radius:20px;margin-bottom:5px;font-weight:700">Must</b><br/>1.2 See qualification criteria and activation conditions</td>
+            <td style="background:var(--yellow);padding:10px 14px;font-size:12px;line-height:1.5;border:1px solid rgba(184,138,0,.2);vertical-align:top"><b style="display:inline-block;background:#E53935;color:#fff;font-size:10px;padding:2px 8px;border-radius:20px;margin-bottom:5px;font-weight:700">Must</b><br/>2.2 Limit from monthly turnover (up to UAH 5M)</td>
+            <td style="background:var(--yellow);padding:10px 14px;font-size:12px;line-height:1.5;border:1px solid rgba(184,138,0,.2);vertical-align:top"><b style="display:inline-block;background:#E53935;color:#fff;font-size:10px;padding:2px 8px;border-radius:20px;margin-bottom:5px;font-weight:700">Must</b><br/>3.2 Sign by authorised persons (accountant + director)</td>
+            <td style="background:var(--yellow);padding:10px 14px;font-size:12px;line-height:1.5;border:1px solid rgba(184,138,0,.2);vertical-align:top"><b style="display:inline-block;background:#E53935;color:#fff;font-size:10px;padding:2px 8px;border-radius:20px;margin-bottom:5px;font-weight:700">Must</b><br/>4.2 Funds reach supplier instantly; repayment tied to invoice</td>
+            <td style="background:var(--yellow);padding:10px 14px;font-size:12px;line-height:1.5;border:1px solid rgba(184,138,0,.2);vertical-align:top"><b style="display:inline-block;background:#E53935;color:#fff;font-size:10px;padding:2px 8px;border-radius:20px;margin-bottom:5px;font-weight:700">Must</b><br/>5.2 Limit grows automatically after each repayment cycle</td>
+          </tr>
+          <tr>
+            <td style="background:var(--gray-50);padding:10px 14px;font-size:11px;font-weight:600;color:var(--gray-400);border:1px solid var(--gray-200);vertical-align:top">Row 3</td>
+            <td style="background:var(--yellow);padding:10px 14px;font-size:12px;line-height:1.5;border:1px solid rgba(184,138,0,.2);vertical-align:top"><b style="display:inline-block;background:#E53935;color:#fff;font-size:10px;padding:2px 8px;border-radius:20px;margin-bottom:5px;font-weight:700">Must</b><br/>1.3 Grant explicit Open Banking consent (AISP)</td>
+            <td style="background:var(--yellow);padding:10px 14px;font-size:12px;line-height:1.5;border:1px solid rgba(184,138,0,.2);vertical-align:top"><b style="display:inline-block;background:#E53935;color:#fff;font-size:10px;padding:2px 8px;border-radius:20px;margin-bottom:5px;font-weight:700">Must</b><br/>2.3 Receive credit decision within hours</td>
+            <td style="background:var(--yellow);padding:10px 14px;font-size:12px;line-height:1.5;border:1px solid rgba(184,138,0,.2);vertical-align:top"><b style="display:inline-block;background:#E53935;color:#fff;font-size:10px;padding:2px 8px;border-radius:20px;margin-bottom:5px;font-weight:700">Must</b><br/>3.3 Fixed UAH rate after confirmation — no FX risk</td>
+            <td style="background:var(--yellow);padding:10px 14px;font-size:12px;line-height:1.5;border:1px solid rgba(184,138,0,.2);vertical-align:top"><b style="display:inline-block;background:#E53935;color:#fff;font-size:10px;padding:2px 8px;border-radius:20px;margin-bottom:5px;font-weight:700">Must</b><br/>4.3 Choose instalment model (partial payments at end)</td>
+            <td style="background:var(--yellow);padding:10px 14px;font-size:12px;line-height:1.5;border:1px solid rgba(184,138,0,.2);vertical-align:top"><b style="display:inline-block;background:#E53935;color:#fff;font-size:10px;padding:2px 8px;border-radius:20px;margin-bottom:5px;font-weight:700">Must</b><br/>5.3 Active debt blocks new BNPL request (safeguard)<br/><br/><b style="display:inline-block;background:#E53935;color:#fff;font-size:10px;padding:2px 8px;border-radius:20px;margin-bottom:5px;font-weight:700">Must</b><br/>5.4 Revoke only affects future agreements</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 
   <!-- BULK SALARY PAYOUT -->
-  <div id="sm-bulk" class="main" style="display:none;padding-top:28px">
-    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:22px">
-      <div>
-        <div class="section-label" style="margin-bottom:4px">Bulk Accountant: Salary Payout · Story Map</div>
-        <div style="font-size:13px;color:var(--gray-600)">5 user tasks · 15 user stories · all Must</div>
-      </div>
-      <a href="https://www.figma.com/board/wMqLfrZ0S9HxBXH5xXHqsb/story_mapping?node-id=0-1&t=kio9uUL7ziTizeCN-1" target="_blank" class="figjam-link">Open in FigJam →</a>
+  <div id="sm-bulk" style="display:none;padding:28px 40px 60px;max-width:1400px;margin:0 auto">
+    <div style="margin-bottom:20px">
+      <div class="section-label" style="margin-bottom:4px">Bulk Accountant: Salary Payout · Story Map</div>
+      <div style="font-size:13px;color:var(--gray-600)">5 user tasks · 15 user stories · all Must</div>
     </div>
-    <div style="margin-bottom:24px">
-        </div>
-      </div>
-    </div>
-    <div style="background:var(--white);border-radius:var(--radius);border:1.5px solid var(--gray-200);box-shadow:var(--shadow);overflow:hidden">
-      <div style="display:grid;grid-template-columns:120px repeat(5,1fr);border-bottom:2px solid var(--gray-200)">
-        <div style="background:var(--gray-100);padding:14px 16px;display:flex;align-items:center;border-right:2px solid var(--gray-200)"><span style="font-size:12px;font-weight:800;color:#C8547A;text-transform:uppercase;letter-spacing:.8px">User Tasks</span></div>
-        <div class="sm-task-cell">1. Create recipient registry</div>
-        <div class="sm-task-cell">2. Validate data &amp; FOP limits</div>
-        <div class="sm-task-cell">3. Sign batch with one confirmation</div>
-        <div class="sm-task-cell">4. Execute all payments at once</div>
-        <div class="sm-task-cell" style="border-right:none">5. Track statuses &amp; get report</div>
-      </div>
-      <div style="display:grid;grid-template-columns:120px repeat(5,1fr);border-bottom:1.5px solid var(--gray-200);background:var(--gray-50)">
-        <div style="padding:10px 16px;display:flex;align-items:center;border-right:2px solid var(--gray-200)"><span style="font-size:12px;font-weight:800;color:var(--yellow-dark);text-transform:uppercase;letter-spacing:.8px">User Stories</span></div>
-        <div class="sm-col-header">Task 1</div>
-        <div class="sm-col-header">Task 2</div>
-        <div class="sm-col-header">Task 3</div>
-        <div class="sm-col-header">Task 4</div>
-        <div class="sm-col-header" style="border-right:none">Task 5</div>
-      </div>
-      <div style="display:grid;grid-template-columns:120px repeat(5,1fr);border-bottom:1px solid var(--gray-100)">
-        <div class="sm-row-label">Row 1</div>
-        <div class="sm-story-cell"><div class="sm-must">Must</div>1.1 Save "Team" as a permanent recipient group (template)</div>
-        <div class="sm-story-cell"><div class="sm-must">Must</div>2.1 Auto-validate IBAN / cards in real time before sending</div>
-        <div class="sm-story-cell"><div class="sm-must">Must</div>3.1 Review batch summary (count, total amount) before signing</div>
-        <div class="sm-story-cell"><div class="sm-must">Must</div>4.1 Successful payments execute; partial failure doesn't block batch</div>
-        <div class="sm-story-cell" style="border-right:none"><div class="sm-must">Must</div>5.1 Per-payment status: success / failed / processing (two levels)</div>
-      </div>
-      <div style="display:grid;grid-template-columns:120px repeat(5,1fr);border-bottom:1px solid var(--gray-100)">
-        <div class="sm-row-label">Row 2</div>
-        <div class="sm-story-cell"><div class="sm-must">Must</div>1.2 Edit amounts in draft without recreating the registry</div>
-        <div class="sm-story-cell"><div class="sm-must">Must</div>2.2 Warning about FOP income limit before signing</div>
-        <div class="sm-story-cell"><div class="sm-must">Must</div>3.2 Sign batch: one signer (FaceID) or multi-signatory flow</div>
-        <div class="sm-story-cell"><div class="sm-must">Must</div>4.2 Auto-retry failed payments after balance top-up</div>
-        <div class="sm-story-cell" style="border-right:none"><div class="sm-must">Must</div>5.2 Download all receipts in one ZIP archive for reporting</div>
-      </div>
-      <div style="display:grid;grid-template-columns:120px repeat(5,1fr)">
-        <div class="sm-row-label">Row 3</div>
-        <div class="sm-story-cell"><div class="sm-must">Must</div>1.3 Smart Paste — paste card/IBAN list from clipboard or Excel</div>
-        <div class="sm-story-cell"><div class="sm-must">Must</div>2.3 Auto-calculate personal income tax &amp; military levy for individuals</div>
-        <div class="sm-story-cell"><div class="sm-must">Must</div>3.3 Schedule batch for a specific date (e.g. salary on the 1st)</div>
-        <div class="sm-story-cell"><div class="sm-must">Must</div>4.3 Push notification on batch completion (success / partial fail)</div>
-        <div class="sm-story-cell" style="border-right:none"><div class="sm-must">Must</div>5.3 Visual expense breakdown by category (salary / rent / suppliers)<br/><br/>5.4 Save current batch as template for next month</div>
-      </div>
+    <div style="overflow-x:auto">
+      <table style="width:100%;border-collapse:collapse;min-width:750px;background:var(--white);border-radius:var(--radius);box-shadow:var(--shadow)">
+        <thead>
+          <tr>
+            <th style="background:var(--gray-100);padding:12px 14px;text-align:left;font-size:11px;font-weight:800;color:#C8547A;text-transform:uppercase;border:1px solid var(--gray-200);width:80px">Tasks</th>
+            <th style="background:var(--pink);padding:12px 14px;text-align:left;font-size:12px;font-weight:700;color:#8B1A3A;border:1px solid rgba(200,84,122,.25)">1. Create recipient registry</th>
+            <th style="background:var(--pink);padding:12px 14px;text-align:left;font-size:12px;font-weight:700;color:#8B1A3A;border:1px solid rgba(200,84,122,.25)">2. Validate data &amp; FOP limits</th>
+            <th style="background:var(--pink);padding:12px 14px;text-align:left;font-size:12px;font-weight:700;color:#8B1A3A;border:1px solid rgba(200,84,122,.25)">3. Sign batch with one confirmation</th>
+            <th style="background:var(--pink);padding:12px 14px;text-align:left;font-size:12px;font-weight:700;color:#8B1A3A;border:1px solid rgba(200,84,122,.25)">4. Execute all payments at once</th>
+            <th style="background:var(--pink);padding:12px 14px;text-align:left;font-size:12px;font-weight:700;color:#8B1A3A;border:1px solid rgba(200,84,122,.25)">5. Track statuses &amp; get report</th>
+          </tr>
+          <tr>
+            <th style="background:var(--gray-50);padding:8px 14px;font-size:11px;font-weight:700;color:var(--yellow-dark);text-transform:uppercase;border:1px solid var(--gray-200)">Stories</th>
+            <th style="background:var(--gray-50);padding:8px 14px;font-size:11px;color:var(--gray-400);border:1px solid var(--gray-200)">Task 1</th>
+            <th style="background:var(--gray-50);padding:8px 14px;font-size:11px;color:var(--gray-400);border:1px solid var(--gray-200)">Task 2</th>
+            <th style="background:var(--gray-50);padding:8px 14px;font-size:11px;color:var(--gray-400);border:1px solid var(--gray-200)">Task 3</th>
+            <th style="background:var(--gray-50);padding:8px 14px;font-size:11px;color:var(--gray-400);border:1px solid var(--gray-200)">Task 4</th>
+            <th style="background:var(--gray-50);padding:8px 14px;font-size:11px;color:var(--gray-400);border:1px solid var(--gray-200)">Task 5</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="background:var(--gray-50);padding:10px 14px;font-size:11px;font-weight:600;color:var(--gray-400);border:1px solid var(--gray-200);vertical-align:top">Row 1</td>
+            <td style="background:var(--yellow);padding:10px 14px;font-size:12px;line-height:1.5;border:1px solid rgba(184,138,0,.2);vertical-align:top"><b style="display:inline-block;background:#E53935;color:#fff;font-size:10px;padding:2px 8px;border-radius:20px;margin-bottom:5px;font-weight:700">Must</b><br/>1.1 Save "Team" as a permanent recipient group (template)</td>
+            <td style="background:var(--yellow);padding:10px 14px;font-size:12px;line-height:1.5;border:1px solid rgba(184,138,0,.2);vertical-align:top"><b style="display:inline-block;background:#E53935;color:#fff;font-size:10px;padding:2px 8px;border-radius:20px;margin-bottom:5px;font-weight:700">Must</b><br/>2.1 Auto-validate IBAN / cards in real time</td>
+            <td style="background:var(--yellow);padding:10px 14px;font-size:12px;line-height:1.5;border:1px solid rgba(184,138,0,.2);vertical-align:top"><b style="display:inline-block;background:#E53935;color:#fff;font-size:10px;padding:2px 8px;border-radius:20px;margin-bottom:5px;font-weight:700">Must</b><br/>3.1 Review batch summary (count, total) before signing</td>
+            <td style="background:var(--yellow);padding:10px 14px;font-size:12px;line-height:1.5;border:1px solid rgba(184,138,0,.2);vertical-align:top"><b style="display:inline-block;background:#E53935;color:#fff;font-size:10px;padding:2px 8px;border-radius:20px;margin-bottom:5px;font-weight:700">Must</b><br/>4.1 Successful payments execute; partial failure doesn't block batch</td>
+            <td style="background:var(--yellow);padding:10px 14px;font-size:12px;line-height:1.5;border:1px solid rgba(184,138,0,.2);vertical-align:top"><b style="display:inline-block;background:#E53935;color:#fff;font-size:10px;padding:2px 8px;border-radius:20px;margin-bottom:5px;font-weight:700">Must</b><br/>5.1 Per-payment status: success / failed / processing</td>
+          </tr>
+          <tr>
+            <td style="background:var(--gray-50);padding:10px 14px;font-size:11px;font-weight:600;color:var(--gray-400);border:1px solid var(--gray-200);vertical-align:top">Row 2</td>
+            <td style="background:var(--yellow);padding:10px 14px;font-size:12px;line-height:1.5;border:1px solid rgba(184,138,0,.2);vertical-align:top"><b style="display:inline-block;background:#E53935;color:#fff;font-size:10px;padding:2px 8px;border-radius:20px;margin-bottom:5px;font-weight:700">Must</b><br/>1.2 Edit amounts in draft without recreating registry</td>
+            <td style="background:var(--yellow);padding:10px 14px;font-size:12px;line-height:1.5;border:1px solid rgba(184,138,0,.2);vertical-align:top"><b style="display:inline-block;background:#E53935;color:#fff;font-size:10px;padding:2px 8px;border-radius:20px;margin-bottom:5px;font-weight:700">Must</b><br/>2.2 Warning about FOP income limit before signing</td>
+            <td style="background:var(--yellow);padding:10px 14px;font-size:12px;line-height:1.5;border:1px solid rgba(184,138,0,.2);vertical-align:top"><b style="display:inline-block;background:#E53935;color:#fff;font-size:10px;padding:2px 8px;border-radius:20px;margin-bottom:5px;font-weight:700">Must</b><br/>3.2 Sign: one signer (FaceID) or multi-signatory flow</td>
+            <td style="background:var(--yellow);padding:10px 14px;font-size:12px;line-height:1.5;border:1px solid rgba(184,138,0,.2);vertical-align:top"><b style="display:inline-block;background:#E53935;color:#fff;font-size:10px;padding:2px 8px;border-radius:20px;margin-bottom:5px;font-weight:700">Must</b><br/>4.2 Auto-retry failed payments after balance top-up</td>
+            <td style="background:var(--yellow);padding:10px 14px;font-size:12px;line-height:1.5;border:1px solid rgba(184,138,0,.2);vertical-align:top"><b style="display:inline-block;background:#E53935;color:#fff;font-size:10px;padding:2px 8px;border-radius:20px;margin-bottom:5px;font-weight:700">Must</b><br/>5.2 Download all receipts in one ZIP archive</td>
+          </tr>
+          <tr>
+            <td style="background:var(--gray-50);padding:10px 14px;font-size:11px;font-weight:600;color:var(--gray-400);border:1px solid var(--gray-200);vertical-align:top">Row 3</td>
+            <td style="background:var(--yellow);padding:10px 14px;font-size:12px;line-height:1.5;border:1px solid rgba(184,138,0,.2);vertical-align:top"><b style="display:inline-block;background:#E53935;color:#fff;font-size:10px;padding:2px 8px;border-radius:20px;margin-bottom:5px;font-weight:700">Must</b><br/>1.3 Smart Paste — paste card/IBAN from clipboard or Excel</td>
+            <td style="background:var(--yellow);padding:10px 14px;font-size:12px;line-height:1.5;border:1px solid rgba(184,138,0,.2);vertical-align:top"><b style="display:inline-block;background:#E53935;color:#fff;font-size:10px;padding:2px 8px;border-radius:20px;margin-bottom:5px;font-weight:700">Must</b><br/>2.3 Auto-calculate income tax &amp; military levy</td>
+            <td style="background:var(--yellow);padding:10px 14px;font-size:12px;line-height:1.5;border:1px solid rgba(184,138,0,.2);vertical-align:top"><b style="display:inline-block;background:#E53935;color:#fff;font-size:10px;padding:2px 8px;border-radius:20px;margin-bottom:5px;font-weight:700">Must</b><br/>3.3 Schedule batch for a specific date (e.g. 1st of month)</td>
+            <td style="background:var(--yellow);padding:10px 14px;font-size:12px;line-height:1.5;border:1px solid rgba(184,138,0,.2);vertical-align:top"><b style="display:inline-block;background:#E53935;color:#fff;font-size:10px;padding:2px 8px;border-radius:20px;margin-bottom:5px;font-weight:700">Must</b><br/>4.3 Push notification on batch completion</td>
+            <td style="background:var(--yellow);padding:10px 14px;font-size:12px;line-height:1.5;border:1px solid rgba(184,138,0,.2);vertical-align:top"><b style="display:inline-block;background:#E53935;color:#fff;font-size:10px;padding:2px 8px;border-radius:20px;margin-bottom:5px;font-weight:700">Must</b><br/>5.3 Visual expense breakdown by category<br/><br/><b style="display:inline-block;background:#E53935;color:#fff;font-size:10px;padding:2px 8px;border-radius:20px;margin-bottom:5px;font-weight:700">Must</b><br/>5.4 Save batch as template for next month</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </div>
