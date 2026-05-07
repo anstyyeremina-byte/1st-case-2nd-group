@@ -965,9 +965,35 @@ footer span{color:var(--green-mid)}
 
 <!-- ══════════════ STORY MAP ══════════════ -->
 <div class="page" id="page-storymap">
-
+<div style="margin-bottom:20px">
+  <div id="storymap-image-area"
+       style="background:var(--white);border-radius:var(--radius);border:2px dashed var(--green-mid);padding:40px 24px;text-align:center;cursor:pointer;transition:all .2s;position:relative"
+       onclick="document.getElementById('storymap-file-input').click()"
+       ondragover="event.preventDefault();this.style.borderColor='var(--green)';this.style.background='var(--green-light)'"
+       ondragleave="this.style.borderColor='var(--green-mid)';this.style.background='var(--white)'"
+       ondrop="handleImageDrop(event)">
+    <input type="file" id="storymap-file-input" accept="image/*"
+           style="display:none" onchange="handleImageUpload(event)"/>
+    <div id="storymap-placeholder">
+      <div style="font-size:40px;margin-bottom:12px">🗺️</div>
+      <div style="font-size:15px;font-weight:700;color:var(--gray-800);margin-bottom:6px">Upload your Story Map image</div>
+      <div style="font-size:13px;color:var(--gray-400);margin-bottom:16px">Click to browse or drag &amp; drop a PNG / JPG / screenshot</div>
+      <div style="display:inline-block;background:var(--green);color:#fff;font-size:13px;font-weight:600;padding:9px 22px;border-radius:9px">Choose image</div>
+    </div>
+    <div id="storymap-preview" style="display:none">
+      <img id="storymap-img" src="" alt="Story Map"
+           style="max-width:100%;border-radius:10px;box-shadow:var(--shadow-lg)"/>
+      <div style="margin-top:12px;display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap">
+        <span style="font-size:12px;color:var(--gray-400)" id="storymap-filename"></span>
+        <button onclick="clearImage(event)"
+                style="font-size:12px;font-weight:600;color:var(--pink-dark);background:var(--pink);border:none;padding:5px 12px;border-radius:7px;cursor:pointer">
+          ✕ Remove
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
   <div class="main" style="padding-top:28px">
-
     <!-- Instruction note -->
     <div style="background:var(--green-light);border-radius:var(--radius);border:1.5px solid var(--green-mid);padding:16px 22px;display:flex;align-items:center;gap:14px;flex-wrap:wrap">
       <span style="font-size:20px">💡</span>
@@ -1019,6 +1045,46 @@ function showPage(id) {
   });
   window.location.hash = id;
   window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+  // Story map image upload
+function handleImageUpload(event){
+  const file = event.target.files[0];
+  if(file) loadImage(file);
+}
+
+function handleImageDrop(event){
+  event.preventDefault();
+  const area = document.getElementById('storymap-image-area');
+  area.style.borderColor='var(--green-mid)';
+  area.style.background='var(--white)';
+  const file = event.dataTransfer.files[0];
+  if(file && file.type.startsWith('image/')) loadImage(file);
+}
+
+function loadImage(file){
+  const reader = new FileReader();
+  reader.onload = e => {
+    document.getElementById('storymap-img').src = e.target.result;
+    document.getElementById('storymap-filename').textContent = file.name;
+    document.getElementById('storymap-placeholder').style.display = 'none';
+    document.getElementById('storymap-preview').style.display = 'block';
+    document.getElementById('storymap-image-area').style.border = '1.5px solid var(--green-mid)';
+    document.getElementById('storymap-image-area').style.cursor = 'default';
+    document.getElementById('storymap-image-area').onclick = null;
+  };
+  reader.readAsDataURL(file);
+}
+
+function clearImage(event){
+  event.stopPropagation();
+  document.getElementById('storymap-img').src = '';
+  document.getElementById('storymap-filename').textContent = '';
+  document.getElementById('storymap-placeholder').style.display = 'block';
+  document.getElementById('storymap-preview').style.display = 'none';
+  document.getElementById('storymap-image-area').style.border = '2px dashed var(--green-mid)';
+  document.getElementById('storymap-image-area').style.cursor = 'pointer';
+  document.getElementById('storymap-image-area').onclick = ()=>document.getElementById('storymap-file-input').click();
+  document.getElementById('storymap-file-input').value = '';
 }
 </script>
 </body>
