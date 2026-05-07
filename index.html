@@ -1005,16 +1005,11 @@ function toggleFC(header){
   const open=card.classList.toggle('open');
   card.querySelector('.fc-body').style.display=open?'block':'none';
 }
-  
-</script>
-</body>
-</html>
-// Read hash on load and navigate
+  // Read hash on load and navigate
 window.addEventListener('load', () => {
   const hash = window.location.hash.replace('#', '');
   if (PAGES.includes(hash)) showPage(hash);
 });
-
 // Update hash when navigating
 function showPage(id) {
   PAGES.forEach(p => {
@@ -1025,3 +1020,6 @@ function showPage(id) {
   window.location.hash = id;
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
+</script>
+</body>
+</html>
