@@ -1008,3 +1008,19 @@ function toggleFC(header){
 </script>
 </body>
 </html>
+// Read hash on load and navigate
+window.addEventListener('load', () => {
+  const hash = window.location.hash.replace('#', '');
+  if (PAGES.includes(hash)) showPage(hash);
+});
+
+// Update hash when navigating
+function showPage(id) {
+  PAGES.forEach(p => {
+    document.getElementById('page-' + p).classList.toggle('active', p === id);
+    const b = document.getElementById('hdr-' + p);
+    if (b) b.classList.toggle('active', p === id);
+  });
+  window.location.hash = id;
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
